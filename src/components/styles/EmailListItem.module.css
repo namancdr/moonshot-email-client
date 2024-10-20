@@ -1,0 +1,58 @@
+.emailListItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background-color: var(--color-unread);
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.emailListItem:hover {
+  background-color: var(--color-selected);
+}
+
+.emailListItem.read {
+  background-color: var(--color-read);
+}
+
+.emailListItem.favorite {
+  background-color: var(--color-favorite);
+}
+
+.emailListItem.active {
+  background-color: var(--color-active);
+  border-left: 4px solid var(--color-accent);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4A90E2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.content p {
+  margin: 0;
+  color: #666;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #999;
+}
